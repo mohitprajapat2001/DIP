@@ -1,0 +1,12 @@
+a = imread('d:/image.jpg');
+subplot(3,2,1);
+imshow(a);
+title('original');
+r = i(:,:,1);
+subplot(3,2,2);imshow(r);title('red component');
+g = i(:,:,2);
+subplot(3,2,3);imshow(g);title('green component');
+b = i(:,:,3);
+subplot(3,2,4);imshow(b);title('blue component');
+rg = rgb2gray(i);
+subplot(3,2,5);imshow(rg);title('graycomponent');

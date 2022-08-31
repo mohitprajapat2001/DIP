@@ -1,0 +1,11 @@
+a = magic(5);
+disp('a=');disp(a);
+b = input('enter the row < size of matrix');
+c = input('enter the column < size of matrix');
+disp('element'); disp(a(b,c));
+n1 = [a(b+1,c),a(b-1,c),a(b,c+1),a(b,c-1)];
+disp('N1 =');disp(n1);
+n2 = [a(b+1,c),a(b-1,c),a(b,c+1),a(b+1,c+1),a(b+1,c-1),a(b-1,c-1),a(b-1,c+1)];
+disp('N8=');disp(n8);
+n3=[a(b+1,c+1),a(b+1,c-1),a(b-1,c-1),a(b-1,c+1)];
+disp('N3=');disp(n3)

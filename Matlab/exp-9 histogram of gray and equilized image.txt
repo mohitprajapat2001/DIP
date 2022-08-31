@@ -1,0 +1,6 @@
+i=imread('d:/image.jpg');
+subplot(4,2,1); imshow(i);title('Original Image');
+m=histeq(g);
+subplot(4,2,2); imhist(g); title('Histogram of Gray Image');
+subplot(4,2,3); imshow(m); title('Equalized Image');
+subplot(4,2,4); imhist(m); title('Histogram of Equalized Image');

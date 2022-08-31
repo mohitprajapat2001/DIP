@@ -1,0 +1,8 @@
+i = imread('d:/image.jpg');
+subplot(2,2,1);imshow(i);title('original');
+j  = imresize(i,2);
+subplot(2,2,2);imshow(j);title('resized');
+k  = imrotate(j,60);
+subplot(2,2,3);imshow(k);title('rotate 60 degree');
+l  = imrotate(i,30);
+subplot(2,2,4);imshow(l);title('rotate 30 degree');
